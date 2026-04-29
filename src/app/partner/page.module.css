@@ -1,0 +1,99 @@
+.partnerContainer {
+  padding-bottom: var(--spacing-xl);
+}
+
+.header {
+  background-color: var(--color-bg-card);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.content {
+  margin-top: var(--spacing-xl);
+}
+
+.benefitsBanner {
+  background: var(--color-primary-dark);
+  color: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.benefitsBanner h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-accent);
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  text-align: center;
+}
+
+.benefitItem h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-xs);
+  color: white;
+}
+
+.benefitItem p {
+  color: #C8E6C9;
+  font-size: 0.95rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+.rolesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.roleCard {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: transform var(--transition-normal);
+}
+
+.roleCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary-light);
+}
+
+.roleIcon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.roleCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-main);
+}
+
+.roleCard p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-lg);
+  flex-grow: 1;
+}
+
+.applyBtn {
+  width: 100%;
+  margin-top: auto;
+}

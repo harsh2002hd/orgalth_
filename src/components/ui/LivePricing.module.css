@@ -1,0 +1,71 @@
+.pricingContainer {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  padding: var(--spacing-md) 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  position: relative;
+}
+
+.tickerWrapper {
+  display: flex;
+  width: max-content;
+  animation: ticker 30s linear infinite;
+}
+
+.tickerWrapper:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.tickerItem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: 0 var(--spacing-xl);
+  white-space: nowrap;
+  border-right: 1px solid var(--color-border);
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.name {
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.price {
+  font-weight: 800;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+}
+
+.change {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.badge {
+  background: var(--color-error);
+  color: white;
+  font-size: 0.6rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.priceUp { color: var(--color-error); }
+.priceDown { color: var(--color-success); }
